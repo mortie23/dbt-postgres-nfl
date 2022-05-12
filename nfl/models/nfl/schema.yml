@@ -1,0 +1,27 @@
+
+version: 2
+
+models:
+  - name: postseason
+    description: "The post season games"
+    columns:
+      - name: game_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: postseason_patriots
+    description: "Post season games with the New England Patriots"
+    columns:
+      - name: game_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  
+  - name: quarterback
+    description: "All the quarterbacks"
+    columns:
+      - name: player_name
+        description: "The name of the player"
